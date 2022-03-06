@@ -4,5 +4,5 @@ import com.okwy.mydigidex.entity.Digimon
 import com.okwy.mydigidex.util.Resource
 
 interface DigiRepository {
-    fun fetchDigimon() : Resource<List<Digimon>>
+    fun getDigimon() : Resource<List<Digimon>>
 }

@@ -9,6 +9,6 @@ interface DigimonDataApi {
     }
 
 
-    @GET("/digimon")
-    suspend fun getDigimon() : List<Digimon>
+    @GET("digimon")
+    suspend fun fetchDigimon() : List<Digimon>
 }

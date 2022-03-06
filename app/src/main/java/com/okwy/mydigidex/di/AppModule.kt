@@ -1,5 +1,8 @@
 package com.okwy.mydigidex.di
 
+import com.okwy.mydigidex.arch.db.DigimonDatabase
+import com.okwy.mydigidex.arch.repository.DigiRepository
+import com.okwy.mydigidex.arch.repository.DigiRepositoryImpl
 import com.okwy.mydigidex.network.DigimonDataApi
 import dagger.Module
 import dagger.Provides
@@ -21,4 +24,10 @@ object AppModule {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(DigimonDataApi::class.java)
+
+
+//    @Provides
+//    fun provideDigiRepository(api: DigimonDataApi, db: DigimonDatabase): DigiRepository = DigiRepositoryImpl(api, db)
+
+
 }

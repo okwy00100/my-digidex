@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.okwy.mydigidex">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".MyDigidexApp"
@@ -14,17 +14,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyDigidex">
         <activity
+            android:name=".views.DetailActivity"
+            android:exported="true" />
+        <activity
             android:name=".views.Splash"
-            android:theme="@style/SplashScreen"
-            android:exported="true" >
+            android:exported="true"
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".views.MainActivity"
-            android:exported="true"/>
+            android:exported="true" />
     </application>
 
 </manifest>
