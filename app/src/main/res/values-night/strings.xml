@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MyDigidex</string>
     <string name="digidex_info">Find your Digimon using the DigiDex</string>
     <string name="digimon_logo">Digimon Logo</string>
 </resources>
