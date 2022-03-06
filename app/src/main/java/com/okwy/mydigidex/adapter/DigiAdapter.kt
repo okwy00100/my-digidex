@@ -21,6 +21,7 @@ class DigiAdapter(
         return DigiViewHolder(binding)
     }
 
+
     override fun onBindViewHolder(holder: DigiViewHolder, position: Int) {
         val item = getItem(position)
         if (item != null)
