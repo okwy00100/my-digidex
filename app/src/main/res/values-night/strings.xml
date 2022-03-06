@@ -2,4 +2,6 @@
 <resources>
     <string name="digidex_info">Find your Digimon using the DigiDex</string>
     <string name="digimon_logo">Digimon Logo</string>
+    <string name="image_loader">Image Loader</string>
+    <string name="image_loader_inner">Image Loader Inner</string>
 </resources>

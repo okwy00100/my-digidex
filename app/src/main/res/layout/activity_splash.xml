@@ -32,4 +32,25 @@
         app:layout_constraintBottom_toBottomOf="@+id/digimon_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_loader"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_loader"
+        android:contentDescription="@string/image_loader" />
+    <ImageView
+        android:id="@+id/image_loader_inner"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_loader_inner"
+        android:contentDescription="@string/image_loader_inner" />
 </androidx.constraintlayout.widget.ConstraintLayout>
