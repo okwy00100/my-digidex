@@ -5,4 +5,6 @@
     <string name="image_loader">Image Loader</string>
     <string name="image_loader_inner">Image Loader Inner</string>
     <string name="query_hint">Search</string>
+    <string name="digimon">Digimon</string>
+    <string name="level_desc">Level : Ultimate</string>
 </resources>
