@@ -1,9 +1,12 @@
 package com.okwy.mydigidex.di
 
+import android.app.Application
+import androidx.room.Room
 import com.okwy.mydigidex.arch.db.DigimonDatabase
 import com.okwy.mydigidex.arch.repository.DigiRepository
 import com.okwy.mydigidex.arch.repository.DigiRepositoryImpl
 import com.okwy.mydigidex.network.DigimonDataApi
+import com.okwy.mydigidex.util.Constants
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -26,8 +29,14 @@ object AppModule {
             .create(DigimonDataApi::class.java)
 
 
-//    @Provides
-//    fun provideDigiRepository(api: DigimonDataApi, db: DigimonDatabase): DigiRepository = DigiRepositoryImpl(api, db)
+    @Provides
+    fun provideDigiRepository(api: DigimonDataApi, db: DigimonDatabase): DigiRepository = DigiRepositoryImpl(api, db)
+
+    @Singleton
+    @Provides
+    fun provideRoomDatabase(app: Application) = Room.databaseBuilder(app, DigimonDatabase::class.java, Constants.DATABASE_NAME)
+        .addMigrations()
+        .build()
 
 
 }

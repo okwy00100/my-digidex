@@ -12,16 +12,4 @@ class DigiViewModel @Inject constructor(
 
     val digimon = repository.getDigimon().asLiveData()
 
-//    private val digimonLiveData = MutableLiveData<List<Digimon>>()
-//    val digimon : LiveData<List<Digimon>> = digimonLiveData
-//
-//    init{
-//        viewModelScope.launch {
-//            val digimon = api.fetchDigimon()
-//            delay(2000)
-//            digimonLiveData.value = digimon
-//        }
-//    }
-
-
 }
