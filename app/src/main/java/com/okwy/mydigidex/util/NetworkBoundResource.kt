@@ -20,14 +20,14 @@ inline fun <ResultType, RequestType> networkBoundResource(
         try {
             //save data to cache
             saveFetchResult(fetch())
-            //new data from the api
+            //pass entire flow obtained from the api
             query().map { Resource.Success(it) }
         }catch (err: Throwable){
             //error then cache data
             query().map{Resource.Error(it, err)}
         }
     }else{
-        //cache
+        //current cache data
         query().map { Resource.Success(it) }
     }
 
