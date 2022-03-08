@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">My Digidex</string>
     <string name="digidex_info">Find your Digimon using the DigiDex</string>
     <string name="digimon_logo">Digimon Logo</string>
     <string name="image_loader">Image Loader</string>
@@ -7,4 +8,13 @@
     <string name="query_hint">Search</string>
     <string name="digimon">Digimon</string>
     <string name="level_desc">Level : Ultimate</string>
+    <string name="pick_a_digimon">Pick a Digimon</string>
+    <string name="digimon_info">Digimon Info</string>
+    <string name="fresh">Digimon Info</string>
+    <string name="in_training">TODO</string>
+    <string name="rookie">TODO</string>
+    <string name="champion">TODO</string>
+    <string name="armor">TODO</string>
+    <string name="ultimate">TODO</string>
+    <string name="mega">TODO</string>
 </resources>

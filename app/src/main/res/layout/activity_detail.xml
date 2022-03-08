@@ -6,15 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".views.DetailActivity">
 
-    <ImageView
-        android:id="@+id/digimon_image_detail"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/digimon_image_detail_layout"
+        android:background="@color/white"
         android:layout_width="0dp"
         android:layout_height="250dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/digimon_logo"
-        android:contentDescription="@string/app_name" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/digimon_image_detail"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/digimon_logo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/digimon_name_detail"
@@ -28,7 +39,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/digimon_image_detail" />
+        app:layout_constraintTop_toBottomOf="@+id/digimon_image_detail_layout" />
 
     <ScrollView
         android:fillViewport="true"
@@ -63,7 +74,9 @@
                 android:id="@+id/digimon_story_detail"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginTop="6dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
                 android:text=""
                 android:textAlignment="center"
                 app:layout_constraintBottom_toBottomOf="parent"

@@ -10,6 +10,7 @@ import com.okwy.mydigidex.adapter.DigiAdapter
 import com.okwy.mydigidex.arch.viewmodel.DigiViewModel
 import com.okwy.mydigidex.databinding.ActivityMainBinding
 import com.okwy.mydigidex.entity.Digimon
+import com.okwy.mydigidex.util.Constants
 import com.okwy.mydigidex.util.Resource
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -66,9 +67,9 @@ class MainActivity : AppCompatActivity(), DigiAdapter.ListItemClickListener {
 
     override fun onListItemClick(digimon: Digimon, adapterPosition: Int) {
         val intent = Intent(this, DetailActivity::class.java)
-        intent.putExtra("name", digimon.name)
-        intent.putExtra("img", digimon.img)
-        intent.putExtra("level", digimon.level)
+        intent.putExtra(Constants.NAME, digimon.name)
+        intent.putExtra(Constants.IMG, digimon.img)
+        intent.putExtra(Constants.LEVEL, digimon.level)
         startActivity(intent)
 
     }

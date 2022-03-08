@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MyDigidex</string>
+    <string name="app_name">My Digidex</string>
     <string name="digidex_info">Find your Digimon using the DigiDex</string>
     <string name="digimon_logo">Digimon Logo</string>
     <string name="image_loader">Image Loader</string>
@@ -7,4 +8,13 @@
     <string name="query_hint">Search</string>
     <string name="digimon">Digimon</string>
     <string name="level_desc">Level : Ultimate</string>
+    <string name="pick_a_digimon">Pick a Digimon</string>
+    <string name="digimon_info">Digimon Info</string>
+    <string name="fresh">"{name}" is a freshly hatched baby digimon. Ranges from being incapable of initiating attacks on its own to being able launching of weak attacks while sporting minimal to no defence. It is pretty cute though.</string>
+    <string name="in_training">"{name}" is a young digimon recently digivolved. It is slightly bigger and possesses a more complex form that generally still has undefined body parts. Capable of weak attacks while sporting minimal defence </string>
+    <string name="rookie">"{name}" is a rookie digimon. An adolescent digimon, it\'s capable on holding its own against a good number of opponents on its own. Capable of moderate attacks while sporting moderate defence.</string>
+    <string name="champion">"{name}" is a champion digimon. A powerful digimon digivolved from its rookie form, capable of strong attacks while sporting a pretty decent defence.</string>
+    <string name="armor">"{name}" is an armor digimon. Digivolved from special means, it is a pretty powerful digimon capable of considerably damaging attacks and a sturdy defence.</string>
+    <string name="ultimate">"{name}" is an ultimate digimon. It has attained one of the most powerful forms of digivolution. It sports an incredible array of attacks while sports incredible defenses.</string>
+    <string name="mega">"{name}" is a mega digimon. It\'s a God-Tier level digimon capable of leveling the battlefield with little to no effort. It sports of extremely powerful attacks with a near impenetrable defence.</string>
 </resources>
