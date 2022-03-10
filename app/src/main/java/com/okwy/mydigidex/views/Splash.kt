@@ -30,7 +30,7 @@ class Splash : AppCompatActivity() {
             imageLoaderInner.animate().setDuration(3000).alpha(1f).withEndAction {
                 val intent = Intent(this@Splash, MainActivity::class.java)
                 startActivity(intent)
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+//                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                 finish()
             }
         }

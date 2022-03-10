@@ -18,6 +18,8 @@ import dagger.hilt.android.AndroidEntryPoint
 class MainActivity : AppCompatActivity(), DigiAdapter.ListItemClickListener {
     private lateinit var binding : ActivityMainBinding
 
+    private val digiAdapter = DigiAdapter(this)
+
     private val viewModel: DigiViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,14 +27,17 @@ class MainActivity : AppCompatActivity(), DigiAdapter.ListItemClickListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val digiAdapter = DigiAdapter(this)
+        getData()
 
+    }
+
+
+    private fun getData(){
         binding.apply {
             digiRecycler.apply {
                 adapter = digiAdapter
                 layoutManager = LinearLayoutManager(this@MainActivity)
             }
-
 
             viewModel.digimon.observe(this@MainActivity){ result ->
                 digiAdapter.submitList(result.data)
@@ -60,10 +65,8 @@ class MainActivity : AppCompatActivity(), DigiAdapter.ListItemClickListener {
 
             }
         }
-
-
-
     }
+
 
     override fun onListItemClick(digimon: Digimon, adapterPosition: Int) {
         val intent = Intent(this, DetailActivity::class.java)
@@ -71,7 +74,6 @@ class MainActivity : AppCompatActivity(), DigiAdapter.ListItemClickListener {
         intent.putExtra(Constants.IMG, digimon.img)
         intent.putExtra(Constants.LEVEL, digimon.level)
         startActivity(intent)
-
     }
 
 
