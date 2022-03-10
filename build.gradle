@@ -22,6 +22,19 @@ buildscript {
         room_ver = '2.5.0-alpha01'
         livedata_ver = '2.4.1'
         fragment_ver = '1.4.1'
+        mockito_ver = '2.25.0'
+        arch_core_test_ver = '2.1.0'
+        coroutines_test_ver = '1.5.2'
+        activity_ktx_ver = '1.4.0'
+        truth_ver = '1.0.1'
+
+        core_test_ver = '1.4.0'
+        android_core_test_ver = '2.1.1'
+        roboelectric_ver = '4.3.1'
+        kot_coroutine_ver = '1.5.2'
+        hamcrest_ver = '1.3'
+        dexmaker_ver = '2.12.1'
+        junit_android_test_ver = '4.13.2'
     }
 
     dependencies {
