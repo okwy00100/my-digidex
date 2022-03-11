@@ -8,7 +8,6 @@ interface DigimonDataApi {
         const val BASE_URL = "https://digimon-api.vercel.app/api/"
     }
 
-
     @GET("digimon")
     suspend fun fetchDigimon() : List<Digimon>
 }

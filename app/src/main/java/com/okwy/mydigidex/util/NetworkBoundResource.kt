@@ -22,17 +22,15 @@ inline fun <ResultType, RequestType> networkBoundResource(
             saveFetchResult(fetch())
             //pass entire flow obtained from the api
             query().map { Resource.Success(it) }
-        }catch (err: Throwable){
+        } catch (err: Throwable) {
             //error then cache data
             query().map{Resource.Error(it, err)}
         }
-    }else{
+    } else {
         //current cache data
         query().map { Resource.Success(it) }
     }
 
-
     //get all
     emitAll(flow)
-
 }

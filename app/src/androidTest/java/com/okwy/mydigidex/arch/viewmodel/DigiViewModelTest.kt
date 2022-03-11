@@ -1,6 +1,5 @@
 package com.okwy.mydigidex.arch.viewmodel
 
-import androidx.activity.viewModels
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.asLiveData
 import com.okwy.mydigidex.arch.repository.DigiRepository

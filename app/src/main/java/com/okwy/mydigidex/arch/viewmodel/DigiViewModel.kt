@@ -11,5 +11,4 @@ class DigiViewModel @Inject constructor(
 ) : ViewModel() {
 
     val digimon = repository.getDigimon().asLiveData()
-
 }

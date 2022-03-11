@@ -1,6 +1,5 @@
 package com.okwy.mydigidex.util
 
-
 enum class ConstantsDigimonLevel(val level: String) {
 
     FRESH("Fresh"),
@@ -10,5 +9,4 @@ enum class ConstantsDigimonLevel(val level: String) {
     ARMOR("Armor"),
     ULTIMATE("Ultimate"),
     MEGA("Mega")
-
 }

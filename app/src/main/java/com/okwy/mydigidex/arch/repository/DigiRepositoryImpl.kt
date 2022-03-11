@@ -17,7 +17,6 @@ class DigiRepositoryImpl(
 
     private val digimonDao = db.digimonDao()
 
-
     override fun getDigimon(): Flow<Resource<List<Digimon>>> = networkBoundResource(
         query = {
             digimonDao.retrieveAlLDigimon()
@@ -33,5 +32,4 @@ class DigiRepositoryImpl(
             }
         }
     )
-
 }

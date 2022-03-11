@@ -19,6 +19,4 @@ interface DigimonDao {
 
     @Query("SELECT * FROM ${Constants.TABLE_NAME}")
     fun retrieveAlLDigimon() : Flow<List<Digimon>>
-
-
 }

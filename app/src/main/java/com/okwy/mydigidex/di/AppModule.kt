@@ -28,7 +28,6 @@ object AppModule {
             .build()
             .create(DigimonDataApi::class.java)
 
-
     @Provides
     fun provideDigiRepository(api: DigimonDataApi, db: DigimonDatabase): DigiRepository = DigiRepositoryImpl(api, db)
 
@@ -37,6 +36,5 @@ object AppModule {
     fun provideRoomDatabase(app: Application) = Room.databaseBuilder(app, DigimonDatabase::class.java, Constants.DATABASE_NAME)
         .addMigrations()
         .build()
-
 
 }

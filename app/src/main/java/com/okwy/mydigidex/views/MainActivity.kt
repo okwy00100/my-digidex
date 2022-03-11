@@ -31,7 +31,6 @@ class MainActivity : AppCompatActivity(), DigiAdapter.ListItemClickListener {
 
     }
 
-
     private fun getData(){
         binding.apply {
             digiRecycler.apply {
@@ -67,7 +66,6 @@ class MainActivity : AppCompatActivity(), DigiAdapter.ListItemClickListener {
         }
     }
 
-
     override fun onListItemClick(digimon: Digimon, adapterPosition: Int) {
         val intent = Intent(this, DetailActivity::class.java)
         intent.putExtra(Constants.NAME, digimon.name)
@@ -75,6 +73,4 @@ class MainActivity : AppCompatActivity(), DigiAdapter.ListItemClickListener {
         intent.putExtra(Constants.LEVEL, digimon.level)
         startActivity(intent)
     }
-
-
 }
