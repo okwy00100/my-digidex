@@ -22,7 +22,7 @@ class DigiRepositoryImpl(
             digimonDao.retrieveAlLDigimon()
         },
         fetch = {
-            delay(2000)
+            delay(1000)
             api.fetchDigimon()
         },
         saveFetchResult = { digimon ->
